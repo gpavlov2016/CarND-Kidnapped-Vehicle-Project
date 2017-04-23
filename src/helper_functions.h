@@ -53,9 +53,13 @@ inline double dist(double x1, double y1, double x2, double y2) {
 	return sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
 }
 
+using namespace std;
+
 inline double * getError(double gt_x, double gt_y, double gt_theta, double pf_x, double pf_y, double pf_theta) {
 	static double error[3];
-	error[0] = fabs(pf_x - gt_x);
+    //cout << "gt_x: " << gt_x << ", gt_y: " << gt_y << ", gt_theta: " << gt_theta << endl;
+    //cout << "pf_x: " << pf_x << ", pf_y: " << pf_y << ", pf_theta: " << pf_theta << endl;
+    error[0] = fabs(pf_x - gt_x);
 	error[1] = fabs(pf_y - gt_y);
 	error[2] = fabs(pf_theta - gt_theta);
 	return error;

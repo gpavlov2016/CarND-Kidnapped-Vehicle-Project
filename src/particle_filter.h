@@ -107,6 +107,9 @@ public:
 	const bool initialized() const {
 		return is_initialized;
 	}
+    void print_best_particle();
+    void print_all_particles();
+
 };
 
 

@@ -78,6 +78,7 @@ int main() {
 	double cum_mean_error[3] = {0,0,0};
 	
 	for (int i = 0; i < num_time_steps; ++i) {
+//	for (int i = 0; i < 3; ++i) {
 		cout << "Time step: " << i << endl;
 		// Read in landmark observations for current time step.
 		ostringstream file;
